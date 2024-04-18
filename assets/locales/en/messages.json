@@ -1,0 +1,11 @@
+{
+    "appName": {
+        "message": "Overlay Extension"
+    },
+    "appShortName": {
+        "message": "Overlay Extension"
+    },
+    "appDescription": {
+        "message": "Overlays"
+    }
+}

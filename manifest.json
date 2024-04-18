@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Overlay Extension",
+  "description": "",
+  "version": "1.0",
+  "permissions": ["tabs", "scripting", "storage"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "extension.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*", "https://www.reddit.com/*"],
+      "js": [
+        "/default/script.js",
+        "/content/discord/script.js",
+        "/content/reddit/script.js"
+      ],
+      "css": ["/content/styles.css"]
+    }
+  ],
+  "host_permissions": ["https://discord.com/*", "https://www.reddit.com/*"]
+}
